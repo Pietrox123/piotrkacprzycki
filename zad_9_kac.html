@@ -1,0 +1,25 @@
+<html>
+<body>
+<div style="color:green;font-size:48px;">
+<script language="JavaScript">
+var d1_kac=prompt("d1_kac=","");
+var d2_kac=prompt("d2_kac=","");
+var g1_kac=prompt("g1_kac=","");
+var g2_kac=prompt("g2_kac=","");
+var dni;
+var godziny;
+var godziny2;
+var godziny3;
+var a=parseFloat(g1_kac);
+var b=parseFloat(g2_kac);
+dni=d1_kac-d2_kac;
+document.write("ilość dni="+d1_kac+" - "+d2_kac+" = "+dni+"<br>");
+godziny=dni * 24;
+godziny2=godziny-g2_kac;
+godziny3=godziny2 + a;
+sekundy=godziny3 * 3600;
+document.write("czas w sekundach="+sekundy+"<br>");
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+ <head> 
+ <title> Użycie fukcji </title>
+ <meta charset="utf-8">
+ </head>
+<body>
+ <div style="color:navy;font-size:50px;">
+ <script language="JavaScript">
+ var a=parseFloat(prompt("a=",""));
+ var b=parseFloat(prompt("b=",""));
+ function suma_kac(a, b) {
+ return a + b;
+ }
+ function odejmowanie_kac(a, b) {
+ return a - b;
+ }
+ function mnozenie_kac(a, b) {
+ return a * b;
+ }
+ function od_kwadratu_kac(a) {
+ return a * a;
+ }
+ function od_kwadratu_kacp(b) {
+ return b * b;
+ }
+ document.write("suma="+suma_kac(a,b)+"</br>"+a+"-"+b+ "="+odejmowanie_kac(a,b)+"</br>"+a+"*"+b+"="+mnozenie_kac(a,b)+"</br>"+a+"^2="+od_kwadratu_kac(a)+"</br>"+b+"^2="+od_kwadratu_kacp(b)+"<br>");
+</script>
+</div>
+</body>
+</html>

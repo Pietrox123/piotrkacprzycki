@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>
+Przykład obliczenia V i Pc walca
+</title>
+<script language="JavaScript">
+function pitagoras(d,x)
+{
+d_kac=parseFloat(d)
+x_kac=parseFloat(x)
+pitagoras_kacprzycki=Math.sqrt((d*d)+(x*x))
+document.getElementsByName('P')[0].value=pitagoras_kacprzycki.toFixed(2); /* na dokument */
+alert("drabina="+pitagoras_kacprzycki.toFixed(2)+" m"); /*do okna Alert */
+pokaz1.innerHTML="drabina="+pitagoras_kacprzycki.toFixed(2)+"<br>"; /* do tabeli */
+}
+function alfa(d,x)
+{
+d_kac=parseFloat(d)
+x_kac=parseFloat(x)
+alfa_kacprzycki=Math.atan(d/x)*180/Math.PI
+document.getElementsByName('obw')[0].value=alfa_kacprzycki.toFixed(2);
+alert("alfa="+alfa_kacprzycki.toFixed(2)+" stopni");
+pokaz2.innerHTML="alfa="+alfa_kacprzycki.toFixed(2)+"<br>";
+}
+</script>
+</head>
+<body>
+obliczanie pola i obwodu prostokąta
+<br> <br>
+<form name="formularz" action="..." onsubmit="pitagoras(this.BOK1.value,this.bok2.value); alfa(this.BOK1.value,this.bok2.value);return false">
+Podaj D=
+<input size="6" name="BOK1">
+Podaj X=
+<input size="6" name="bok2">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Drabina=
+<input size="6" name="P">
+Alfa=
+<input size="6" name="obw">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body>
+</html>

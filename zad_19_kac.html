@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>
+Przykład obliczenia V i Pc walca
+</title>
+<script language="JavaScript">
+function pole(a,b)
+{
+a_dana_kac=parseFloat(a)
+b_dana_kac=parseFloat(b)
+pole_kacprzycki=a*b
+document.getElementsByName('P')[0].value=pole_kacprzycki.toFixed(2); /* na dokument */
+alert("pole="+pole_kacprzycki.toFixed(2)+" cm"); /*do okna Alert */
+pokaz1.innerHTML="pole="+pole_kacprzycki.toFixed(2)+" cm"+"<br>"; /* do tabeli */
+}
+function obwod(a,b)
+{
+a_liczba=parseFloat(a)
+b_liczba=parseFloat(b)
+obwod_kacprzycki=(2*a)+(2*b)
+document.getElementsByName('obw')[0].value=obwod_kacprzycki.toFixed(2);
+alert("obwod="+obwod_kacprzycki.toFixed(2)+" cm");
+pokaz2.innerHTML="obwod="+obwod_kacprzycki.toFixed(2)+"cm";
+}
+</script>
+</head>
+<body>
+obliczanie pola i obwodu prostokąta
+<br> <br>
+<form name="formularz" action="..." onsubmit="pole(this.BOK1.value,this.bok2.value); obwod(this.BOK1.value,this.bok2.value);return false">
+Podaj a=
+<input size="6" name="BOK1">
+Podaj b=
+<input size="6" name="bok2">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+pole=
+<input size="6" name="P">
+obwód=
+<input size="6" name="obw">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body>
+</html>

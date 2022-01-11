@@ -1,0 +1,26 @@
+<html>
+<body>
+<div>
+<p style="color:green;font-size:20px;">Menu</P>
+<p style="color:red;font-size:20px;">1- czerwony</P>
+<p style="color:blue;font-size:20px;">2 - niebieski</P>
+ <script language="JavaScript">
+function kolor(liczba){ 
+ if(liczba==1 || liczba=="czerwony")
+ {document.write ("<p style=\"size: 7; color: red;\"><br>wczytałeś kolor czerwony<br></p>");}
+ if(liczba==2 || liczba=="niebieski")
+ {document.write ("<p style=\"size: 1; color: blue;\"><br>wczytałeś kolor niebieski<br></p>");}
+ }</script>
+</div>
+<form name="formularz" action="..." onsubmit="kolor(this.BOK1.value)">
+wybierz kolor=
+<input size="6" name="BOK1">
+<br>
+<br>
+<input TYPE="submit" Value="SRPAWDŹ" >
+</form>
+<table>
+<tr id="BOK1"></tr>
+</table>
+</body>
+</html>
